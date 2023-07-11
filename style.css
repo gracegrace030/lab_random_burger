@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+html {
+    background-color: #404040;
+}
+
+body {
+    font-family: 'PT Mono', monospace;
+    text-align: center;
+    font-size: 14px;
+    /* background-color: rgb(230, 236, 237); */
+    background-color: #fff;
+    width: 80vw;
+    height: 100vh;
+
+    margin: auto;
+    padding: 1rem 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+a {
+    color: #D95204;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 20vh;
+    /* position: absolute;
+    top: 0%;
+    left: 10%; */
+    transform: rotateZ(-10deg);
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-img {
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: all 0.3s;
+}
+
+.burger-img-1 {
+    background-image: url("./burger.jpg");
+}
+
+.burger-img-2 {
+    background-image: url("./burger-2.jpg");
+}
+
+.flip {
+    transform: scaleY(0.05);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 50vw;
+    min-width: 250px;
+    text-align: left;
+    margin: auto;
+
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 1rem 2rem;
+
+    transition: all 0.4s;
+}
+
+.menu ul {
+    padding: 0;
+    flex: 2;
+}
+
+.menu ul:first-child {
+    flex: 1;
+}
+
+.menu li {
+    text-transform: capitalize;
+    padding: 0.2rem 0;
+    padding-right: 1rem;
+    border-top: solid 1px #fff;
+
+    list-style: none;
+}
+
+.menu li:first-child {
+    border-top: none;
+}
+
+#burger-text {
+    margin-top: 1rem;
+    max-width: 500px;
+    min-height: 3lh;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    /* color: #fff;
+    background-color: #2C3E50; */
+    border: solid 4px #000;
+
+    margin-top: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.action {
+    display: inline-block;
+    position: relative;
+}
+
+.action::before,
+.action::after {
+    content: " ";
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+
+    background: center center no-repeat url(./hand.png);
+    background-size: contain;
+}
+
+.action::before {
+    left: -90px;
+}
+
+.action::after {
+    right: -90px;
+    transform: scaleX(-1);
+}
+
+.btn:hover {
+    opacity: 0.6;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:active {
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+
+footer {
+    font-size: 12px;
+    margin-top: 4rem;
+}
