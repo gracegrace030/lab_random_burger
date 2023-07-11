@@ -85,9 +85,8 @@ function resetTypeWriter() {
   burgerText.innerHTML = "";
 }
 
-createRandomBurger();
-// Button Effect
-burgerBtn.addEventListener("click", () => {
+// Flip effect
+function flip() {
   burgerImg.classList.toggle("flip");
   burgerImg.classList.toggle("burger-img-2");
 
@@ -103,7 +102,12 @@ burgerBtn.addEventListener("click", () => {
     createRandomBurger();
     menu.classList.toggle("flip");
   }, 450);
-});
+}
+
+createRandomBurger();
+// Event Handlers
+burgerBtn.addEventListener("click", flip);
+burgerBtn.addEventListener("keypress", flip);
 
 // ====================================================================================
 

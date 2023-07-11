@@ -171,7 +171,7 @@ h2 {
     transform: scaleX(-1);
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
     opacity: 0.6;
     background-color: #000;
     color: #fff;
