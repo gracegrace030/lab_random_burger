@@ -12,11 +12,12 @@ body {
     /* background-color: rgb(230, 236, 237); */
     background-color: #fff;
     width: 80vw;
-    height: 100vh;
+    min-height: 100vh;
 
     margin: auto;
     padding: 1rem 2rem;
     position: relative;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,6 +52,7 @@ header {
 
 header h1 {
     font-size: 4rem;
+    white-space: nowrap;
 }
 
 h2 {
@@ -185,4 +187,28 @@ h2 {
 footer {
     font-size: 12px;
     margin-top: 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        line-height: 1rem;
+    }
+
+    .burger-img{
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .btn{
+        margin-top: 1rem;
+    }
 }
