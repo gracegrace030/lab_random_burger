@@ -88,7 +88,6 @@ function resetTypeWriter() {
 // Flip effect
 function flip() {
   burgerImg.classList.toggle("flip");
-  burgerImg.classList.toggle("burger-img-2");
 
   setTimeout(function () {
     menu.classList.toggle("flip");
@@ -96,6 +95,7 @@ function flip() {
 
   setTimeout(function () {
     burgerImg.classList.toggle("flip");
+    burgerImg.classList.toggle("burger-img-2");
   }, 300);
 
   setTimeout(function () {
